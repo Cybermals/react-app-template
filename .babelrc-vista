@@ -1,0 +1,17 @@
+{
+    "presets": [
+        [
+            "env",
+            {
+                "useBuiltIns": "entry",
+                "corejs": "3.22"
+            }
+        ],
+        "react"
+    ],
+    "plugins": [
+        "syntax-dynamic-import",
+        "transform-es2015-destructuring",
+        "transform-object-rest-spread"
+    ]
+}
