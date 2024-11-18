@@ -1,5 +1,5 @@
 {
-  "name": "react-app",
+  "name": "react-app-template",
   "version": "1.0.0",
   "description": "A template for a React app. Includes React, React Router DOM, Bootstrap, Bootstrap Icons, and polyfills to support older browsers.",
   "main": "index.js",
@@ -15,10 +15,19 @@
     "react-router-dom",
     "bootstrap",
     "app",
+    "frontend",
     "template"
   ],
   "author": "DylanCheetah",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cybermals/react-app-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Cybermals/react-app-template/issues"
+  },
+  "homepage": "https://github.com/Cybermals/react-app-template#readme",
   "devDependencies": {
     "@babel/core": "^7.24.4",
     "@babel/preset-env": "^7.24.6",
