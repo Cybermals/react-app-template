@@ -1,15 +1,13 @@
-/*
- * React App - App Component
- */
-
 import React from "react";
+import {Outlet} from "react-router-dom";
+import NavBar from "./components/NavBar";
 
 
-// Define app component
-function App() {
+export function Component() {
     return (
-        <p>Hello World!</p>
+        <div>
+            <NavBar/>
+            <Outlet/>
+        </div>
     );
 }
-
-export default App;
