@@ -14,5 +14,5 @@ A template for React apps.
 10. edit the code in `src/` as needed
 11. the app will rebuild automatically whenever the code is changed and the browser will refresh as well
 
-# Deploy
+## Deploy
 TODO
