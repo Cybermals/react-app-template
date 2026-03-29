@@ -1,0 +1,44 @@
+{
+  "name": "react-app",
+  "version": "1.0.0",
+  "description": "A template for a React app.",
+  "license": "MIT",
+  "author": "DylanCheetah",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:copy && npm run build:vendor && npm run build:bundle",
+    "serve": "npm run build:copy && npm run build:vendor && npm run serve:budo",
+    "build:copy": "copyfiles -f src/index.html dist/",
+    "build:vendor": "browserify -r react -r react-dom | uglifyjs --compress --mangle > dist/vendor.js",
+    "build:bundle": "browserify src/main.js -x react -x react-dom | uglifyjs --compress --mangle > dist/bundle.js",
+    "serve:budo": "budo src/main.js -p 8000 --serve /bundle.js --live --dir dist/ -d -- -x react -x react-dom",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
+    "@babel/preset-react": "^7.28.5",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.1",
+    "budo": "^11.8.4",
+    "copyfiles": "^2.4.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "uglify-js": "^3.19.3",
+    "watchify": "^4.0.0"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "@babel/preset-env",
+            "@babel/preset-react"
+          ]
+        }
+      ]
+    ]
+  }
+}
