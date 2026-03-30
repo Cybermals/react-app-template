@@ -10,4 +10,4 @@ A template for a React app.
 05. create your app
 06. stop the development server
 07. execute `npm run build` to build a production version of your app
-08. use a web serve to serve the files in the `dist/` folder
+08. use a web server to serve the files in the `dist/` folder
